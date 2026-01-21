@@ -1,7 +1,8 @@
 const comment = "TypeScript is a strongly typed programming language"
 
-function shortenComment(comment: string): string {
-  let A = "sad"
-  return A;
-  // Write your code below
+export function shortenComment(commentT: string): string {
+  return commentT
+    .split(" ")
+    .filter((m) => m.length >= 5 && m.length <= 10)
+    .join(" ");
 }
