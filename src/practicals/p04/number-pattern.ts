@@ -1,13 +1,11 @@
-const p =Number(process.argv[2]);
-if (!isNaN(p) && p >0) {
-for (let i = 1 ;i <=p; i++) {
-console.log(i)
-    let row ="";
+let number = Number(process.argv[2]);
 
-for (let j = p; j >= 1; j--) {
-    row += j
-;
-    }
-console.log(row);
-  }
-}   
+if ((!number  || number <= -1) && number !== 0) {
+  process.exit();
+}
+let row = "";
+for (let index = 0; index < number; index++) {
+  let num = index + 1;
+  console.log(`${" ".repeat(number - num)}${num}${row}`);
+  row = `${num}${row}`;
+}
