@@ -1,5 +1,5 @@
 const number = Number(process.argv[2]);
-if ((!number  || number <= -1) && number !== 0) {
+if ((isNaN(number)  || number <= -1) && number !== 0) {
   process.exit();
 }
 let row = "";
