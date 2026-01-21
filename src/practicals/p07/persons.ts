@@ -13,7 +13,9 @@ export function sortPersons(persons: Person[]): Person[] {
     L.push(persons[A])
   }
   return L;
+  
 }
+
 const persons: Person[] = [
   { firstName: "Somchai", lastName: "Jaidee", age: 30 },
   { firstName: "", lastName: "Test", age: 20 },
