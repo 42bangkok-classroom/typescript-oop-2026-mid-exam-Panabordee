@@ -1,4 +1,4 @@
-let number = Number(process.argv[2]);
+const number = Number(process.argv[2]);
 if ((!number  || number <= -1) && number !== 0) {
   process.exit();
 }

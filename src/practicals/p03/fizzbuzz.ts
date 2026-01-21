@@ -1,4 +1,3 @@
-// Write your code below
 const n =Number(process.argv[2]);
 
 if (!isNaN(n) && n >0) {
