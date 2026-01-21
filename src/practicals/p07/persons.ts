@@ -4,7 +4,7 @@ interface Person {
   age?: number;
 }
 
-function sortPersons(persons: Person[]): Person[] {
+export function sortPersons(persons: Person[]): Person[] {
   let L = []
   for (let A = 0; A < persons.length; A++) {
     const { firstName, lastName, age } = persons[A];
